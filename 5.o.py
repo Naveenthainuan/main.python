@@ -1,0 +1,56 @@
+import math
+while True:
+    print("/n---Scientific  Calculator ---")
+    print("1.Addition")
+    print("2.subtraction")
+    print("3.Multiplication")
+    print("4.division")
+    print("5.suqare Root")
+    print("6.modulus")
+    print("7.power")
+    print("8.OFF")
+    print("9.Square")
+    choice = int(input("Enter your choice: "))
+
+    if choice == 8:
+        print("calculator OFF!") 
+        break
+    if choice == 9:
+            i = float(input("Enter your value: "))
+            print("Result=" , i * i)
+
+    if choice in [1,2,3,4,6,7] :
+        a = float(input("enter your first value: "))
+        b = float(input("enter you second value: "))
+    if choice == 1:
+       print("Result=" , a + b)
+
+    elif choice == 2:
+         print("Result=" , a - b)
+
+    elif choice == 3:
+        print("Result=" , a * b)                                    
+
+    elif choice == 4:
+        if b != 0: # {!=}  not equal to zero                
+            print("Result=" , a / b)                 
+        else:
+         print("Error:Division by zero")
+
+    elif choice == 6: # // gives quetiont
+         print("Result=" , a // b)
+
+    elif choice == 7: # ** for power
+        print("Result=" , a ** b) 
+
+    elif choice == 5: # for square root (math.sqrt)
+         j = float(input("Enter your number:"))
+         if a >= 0:
+             print("Result=" , math.sqrt(j))
+
+    else:
+         print("Invalid choice")
+    
+          
+        
+
