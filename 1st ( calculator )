@@ -35,7 +35,7 @@ while True:
         if b != 0: # {!=}  not equal to zero                
             print("Result=" , a / b)                 
         else:
-         print("Error:Division by zero")
+         print("Error:Cannot divide by Zero")
 
     elif choice == 6: # // gives quetiont
          print("Result=" , a // b)
